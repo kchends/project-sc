@@ -9,7 +9,7 @@
 <body>
   <main id="app">
     <h1>Project SC</h1>
-    <p class="lead">Supply‑chain incremental (MVP: Place PO → Receive → Fulfill)</p>
+    <p class="lead">Supply‑chain incremental (MVP: Place PO → Supplier accepts/commits → Receive → Fulfill)</p>
 
     <section class="status">
       <div>Cash: $<span id="cash">0</span></div>
@@ -19,11 +19,14 @@
 
     <section class="po">
       <h2>Place Purchase Order (PO)</h2>
+      <label>Supplier:
+        <select id="supplierSelect"></select>
+      </label>
       <label>Quantity: <input id="poQty" type="number" value="10" min="1"></label>
       <label>Lead time (s):
         <select id="poLead">
           <option value="5">5s (fast)</option>
-          <option value="15">15s (normal)</option>
+          <option value="15" selected>15s (normal)</option>
           <option value="30">30s (slow)</option>
         </select>
       </label>
@@ -46,7 +49,7 @@
     </div>
 
     <footer>
-      <small>Scaffold by $user — saved to localStorage. Repo: https://github.com/$user/$repoName</small>
+      <small>Scaffold by kchends — autosaves to localStorage. Repo: https://github.com/kchends/project-sc</small>
     </footer>
   </main>
   <script src="game.js"></script>
