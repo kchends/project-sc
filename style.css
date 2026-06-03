@@ -1,0 +1,13 @@
+:root{--bg:#071023;--card:#0b1220;--accent:#60a5fa;--text:#e6eef8}
+*{box-sizing:border-box}
+body{margin:0;font-family:Segoe UI,Arial,sans-serif;background:linear-gradient(180deg,var(--bg),#02111a);color:var(--text);display:flex;justify-content:center;padding:2rem}
+#app{width:min(900px,96%);background:rgba(255,255,255,0.02);padding:1.5rem;border-radius:10px}
+h1{color:var(--accent);margin:0}
+.lead{opacity:0.85}
+.status{display:flex;gap:1.25rem;margin:1rem 0}
+.po label{display:inline-block;margin-right:1rem}
+button{background:var(--accent);border:none;color:#022;padding:0.5rem 0.75rem;border-radius:6px;cursor:pointer}
+.pos, .log{margin-top:1rem}
+#log{max-height:160px;overflow:auto;background:rgba(255,255,255,0.02);padding:0.5rem;border-radius:6px}
+.controls{margin-top:1rem;display:flex;gap:0.5rem}
+footer{margin-top:1rem;color:rgba(230,238,248,0.6)}

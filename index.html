@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Project SC — Supply Chain Incremental</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main id="app">
+    <h1>Project SC</h1>
+    <p class="lead">Supply‑chain incremental (MVP: Place PO → Receive → Fulfill)</p>
+
+    <section class="status">
+      <div>Cash: $<span id="cash">0</span></div>
+      <div>Inventory: <span id="inventory">0</span></div>
+      <div>Demand/s: <span id="demand">1</span></div>
+    </section>
+
+    <section class="po">
+      <h2>Place Purchase Order (PO)</h2>
+      <label>Quantity: <input id="poQty" type="number" value="10" min="1"></label>
+      <label>Lead time (s):
+        <select id="poLead">
+          <option value="5">5s (fast)</option>
+          <option value="15">15s (normal)</option>
+          <option value="30">30s (slow)</option>
+        </select>
+      </label>
+      <button id="placePo">Place PO</button>
+    </section>
+
+    <section class="pos">
+      <h2>Outstanding POs</h2>
+      <div id="posList">(none)</div>
+    </section>
+
+    <section class="log">
+      <h2>Activity Log</h2>
+      <div id="log"></div>
+    </section>
+
+    <div class="controls">
+      <button id="save">Save</button>
+      <button id="reset">Reset</button>
+    </div>
+
+    <footer>
+      <small>Scaffold by $user — saved to localStorage. Repo: https://github.com/$user/$repoName</small>
+    </footer>
+  </main>
+  <script src="game.js"></script>
+</body>
+</html>

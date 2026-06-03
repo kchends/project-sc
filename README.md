@@ -1,0 +1,1 @@
+# Project SC\n\nSupply chain incremental game — start at placing POs with manufacturers.\n\nRoadmap: MVP (PO → Receive → Fulfill), upgrades, suppliers, logistics, demand modeling, end-to-end expansion.
