@@ -13,12 +13,15 @@
 
     <section class="status">
       <div>Cash: $<span id="cash">0</span></div>
-      <div>Inventory: <span id="inventory">0</span></div>
+      <div id="inventoryList">Inventory: (loading...)</div>
       <div>Demand/s: <span id="demand">1</span></div>
     </section>
 
     <section class="po">
       <h2>Place Purchase Order (PO)</h2>
+      <label>Part:
+        <select id="partSelect"></select>
+      </label>
       <label>Supplier:
         <select id="supplierSelect"></select>
       </label>
